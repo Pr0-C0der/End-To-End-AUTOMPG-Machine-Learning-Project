@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Mileage Performance</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body style="background: #2e2566;">
+ <div class="login">
+	<h1>AUTO MPG</h1>
+  <h4>Predict Mileage of Your Car (Miles Per Gallon)</h4>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="#" method="POST">
+        <input type="number" name="cylinders" placeholder="Number of Cylinders " required="required"  min="1"/>
+		<input type="number" step="0.0001" name="displacement" placeholder="Displacement (Engine displacement in cubic inches)" required="required" min="1"/>
+		<input type="number" step="0.0001" name="horsepower" placeholder="Horsepower (Engine horsepower)" required="required" min="1"/>
+		<input type="number" step="0.0001" name="weight" placeholder="Weight (Weight of the car in pounds)" required="required" min="1"/>
+		<input type="number" step="0.0001" name="acceleration" placeholder="Acceleration (Acceleration rate of the car)" required="required" min="1"/>
+		<input type="number" name="model_year" placeholder="Model Year (ranging from 70 to 82 {19XX})" required="required" min="70" max="82"/>
+		<input type="number" name="origin" placeholder="Manufacturing Country (1: USA, 2: Europe, 3: Japan)" required="required" min="1" max="3"/>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict Mileage Per Gallon (MPG)</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction }}
+
+ </div>
+
+
+</body>
+</html>
