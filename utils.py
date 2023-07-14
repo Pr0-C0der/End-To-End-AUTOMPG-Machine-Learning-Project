@@ -279,8 +279,8 @@ def convert_to_dict(keys, values):
         A dictionary with the keys and values.
     """
 
-    dict = {}
     # pylint: disable=W0622
+    dict = {}
     for i in range(len(keys)):
         dict[keys[i]] = values[i]
     return dict
