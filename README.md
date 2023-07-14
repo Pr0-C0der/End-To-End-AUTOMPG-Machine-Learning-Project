@@ -15,6 +15,8 @@ This project demonstrates an end-to-end application that predicts the mileage of
 [![Hotmail Badge](https://img.shields.io/badge/-Hotmail-0078D4?style=flat-square&logo=microsoft-outlook&logoColor=white&link=mailto:prathamesh.gadekar@hotmail.com)](mailto:prathamesh.gadekar@hotmail.com)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Pr0-C0der/exoplanet-detection/blob/main/LICENSE)
+[![Python application](https://github.com/Pr0-C0der/End-To-End-AUTOMPG-Machine-Learning-Project/actions/workflows/main.yml/badge.svg)](https://github.com/Pr0-C0der/End-To-End-AUTOMPG-Machine-Learning-Project/actions/workflows/main.yml)
+
 
 ## Data
 
