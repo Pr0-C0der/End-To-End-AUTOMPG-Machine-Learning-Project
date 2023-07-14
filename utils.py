@@ -46,6 +46,7 @@ def load_data(file_path):
         "origin",
     ]
     # Load data from a file
+    # pylint: disable=W0718
     try:
         data = pd.read_csv(
             file_path, sep=" ", comment="\t", skipinitialspace=True, names=cols
@@ -143,6 +144,8 @@ def add_parameters(data):
     Returns:
         The processed data.
     """
+
+    # pylint: disable=W0718
     try:
         power_to_weight = data["horsepower"] / data["weight"]
         data["power_to_weight"] = power_to_weight
@@ -277,6 +280,7 @@ def convert_to_dict(keys, values):
     """
 
     dict = {}
+    # pylint: disable=W0622
     for i in range(len(keys)):
         dict[keys[i]] = values[i]
     return dict

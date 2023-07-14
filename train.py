@@ -157,6 +157,8 @@ def train_all_models(X_train, X_test, y_train, y_test):
     """
 
     ModelsandRMSE = {}
+
+    # pylint: disable=W0612
     for model_name, (param_func, _) in MODELS.items():
         model, rmse = train_model(model_name, X_train, X_test, y_train, y_test)
         ModelsandRMSE[model] = rmse
