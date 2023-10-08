@@ -10,7 +10,7 @@ from data_setup import data_preprocessing_pipeline
 # Test train_model function
 def test_train_model():
     """
-    Tests the train_model function.
+    Tests the train_model function
 
     This function tests the train_model function by calling it with the "svr" model name and checking if the model is not None and the RMSE is greater than or equal to 0.0.
 
