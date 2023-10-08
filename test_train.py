@@ -32,7 +32,7 @@ def test_train_model():
 # Test train_all_models function
 def test_train_all_models():
     """
-    Tests the train_all_models function.
+    Tests the train_all_models function
 
     This function tests the train_all_models function by calling it and checking if the length of the list of models is greater than 0 and all of the models are not None.
 
