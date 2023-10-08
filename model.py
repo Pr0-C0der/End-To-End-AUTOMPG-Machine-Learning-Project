@@ -65,7 +65,7 @@ def rf_params():
         The RF parameter grid contains the parameters that will be used to tune the RF model.
 
     Returns:
-        The RF model and the RF parameter grid.
+        The RF model and the RF parameter grid
     """
     return RF_MODEL, PARAM_GRIDS["RandomForestRegressor"]
 
