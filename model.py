@@ -53,7 +53,7 @@ def svr_params():
         The SVR parameter grid contains the parameters that will be used to tune the SVR model.
 
     Returns:
-        The SVR model and the SVR parameter grid.
+        The SVR model and the SVR parameter grid
     """
     return SVR_MODEL, PARAM_GRIDS["SVR"]
 
