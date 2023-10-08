@@ -31,3 +31,19 @@ jobs:
       run: make test
     - name: Format Code
       run: make format
+      
+    - name: add-comment
+      env:
+      - name: GITHUBTOKEN
+          valueFrom:
+            secretKeyRef:
+               name: github
+            key: token
+      script: |
+          github.rest.issues.createComment({
+          issue_number: context.issue.number,
+          owner: context.repo.owner,
+          repo: context.repo.repo,
+          body: '👋 Thanks for reporting!'
+        })
+
