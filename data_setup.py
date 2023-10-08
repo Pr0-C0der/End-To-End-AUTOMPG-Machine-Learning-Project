@@ -51,7 +51,7 @@ def data_preprocessing_pipeline():
         The data is cleaned by removing non-integer values. 
         New parameters are added to the data. 
         The data is one-hot encoded. 
-        The data is split into train and test sets.
+        The data is split into train and test sets
 
     Returns:
         The train and test sets.
