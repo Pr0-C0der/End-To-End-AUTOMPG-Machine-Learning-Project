@@ -20,7 +20,7 @@ MODELS = {
 
 def model_output(model, X_train, X_test, y_train, y_test):
     """
-    Trains model and evaluates performance of the given model.
+    Trains the model and evaluates performance of the given model. 
 
     Args:
         model: The model to be evaluated.
