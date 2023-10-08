@@ -63,7 +63,7 @@ def find_best_model(model, param_grid, X_train, X_test, y_train, y_test):
         model: The model to be evaluated.
         param_grid: The hyperparameters to be searched.
         X_train: The training data.
-        X_test: The test data.
+        X_test: The test data
         y_train: The training labels.
         y_test: The test labels.
 
