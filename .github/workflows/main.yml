@@ -40,7 +40,7 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
           const body = "Tests have failed. Please check the test results.";
-          github.issues.createComment({
+          github.rest..issues.createComment({
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
