@@ -47,7 +47,7 @@ def download_data(url=DATA_URL):
 def data_preprocessing_pipeline():
     """
     Description:
-        This function performs data preprocessing on the dataset. 
+        This function performs data preprocessing on the dataset.
         The data is cleaned by removing non-integer values. 
         New parameters are added to the data. 
         The data is one-hot encoded. 
