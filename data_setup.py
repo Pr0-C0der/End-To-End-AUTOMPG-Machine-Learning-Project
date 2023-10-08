@@ -54,7 +54,7 @@ def data_preprocessing_pipeline():
         The data is split into train and test sets.
 
     Returns:
-        The train and test sets.
+        The train and test sets
     """
     
     data = load_data(DATA_PATH)
