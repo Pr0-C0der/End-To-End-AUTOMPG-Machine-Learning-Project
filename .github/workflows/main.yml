@@ -11,11 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
-      
+    runs-on: ubuntu-latest 
     steps:
     - uses: actions/checkout@v3
     # - name: Set up Python 3.10.7
@@ -30,16 +26,17 @@ jobs:
     #   run: make test
     # - name: Format Code
     #   run: make format
-      
-    - name: Comment on PR
-      uses: peter-evans/create-or-update-comment@5f728c3dae25f329afbe34ee4d08eef25569d79f
-      with:
-          issue-number: ${{ github.event.issue.number }}
-          body: |
-            Temporary Comment
-
-    - name: Prevent Merging on Failure
-      if: failure()
-      run: exit 1
-        })
+        
+  add-comment:
+      runs-on: ubuntu-latest
+      permissions:
+        issues: write
+        pull-requests: write
+      steps:
+        - name: Add comment
+          uses: peter-evans/create-or-update-comment@5f728c3dae25f329afbe34ee4d08eef25569d79f
+          with:
+            issue-number: ${{ github.event.issue.number }}
+            body: |
+              Temp
 
