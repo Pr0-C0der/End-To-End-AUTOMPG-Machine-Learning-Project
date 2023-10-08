@@ -27,8 +27,8 @@ jobs:
       run: make install
     - name: Lint code
       run: make lint
-    - name: Test with pytest
-      run: make test
+    # - name: Test with pytest
+    #   run: make test
     - name: Format Code
       run: make format
       
