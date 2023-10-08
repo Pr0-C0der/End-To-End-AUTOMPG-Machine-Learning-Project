@@ -15,7 +15,7 @@ def test_train_model():
     This function tests the train_model function by calling it with the "svr" model name and checking if the model is not None and the RMSE is greater than or equal to 0.0.
 
     Returns:
-        None.
+        None
     """
 
     X_train, X_test, y_train, y_test = data_preprocessing_pipeline()
