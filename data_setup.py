@@ -48,7 +48,7 @@ def data_preprocessing_pipeline():
     """
     Description:
         This function performs data preprocessing on the dataset. 
-        The data is cleaned by removing non-integer values. 
+        The data is cleaned by removing non-integer values.
         New parameters are added to the data. 
         The data is one-hot encoded. 
         The data is split into train and test sets.
