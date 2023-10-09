@@ -61,7 +61,7 @@ def svr_params():
 def rf_params():
     """
     Description:
-        The RF model is a Random Forest Regressor model. 
+        The RF model is a Random Forest Regressor model.
         The RF parameter grid contains the parameters that will be used to tune the RF model.
 
     Returns:
