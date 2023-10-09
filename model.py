@@ -49,11 +49,11 @@ LIR_MODEL = LinearRegression()
 def svr_params():
     """
     Description:
-        The SVR model is a support vector regression model. 
+        The SVR model is a support vector regression model
         The SVR parameter grid contains the parameters that will be used to tune the SVR model.
 
     Returns:
-        The SVR model and the SVR parameter grid.
+        The SVR model and the SVR parameter grid
     """
     return SVR_MODEL, PARAM_GRIDS["SVR"]
 
@@ -61,7 +61,7 @@ def svr_params():
 def rf_params():
     """
     Description:
-        The RF model is a Random Forest Regressor model. 
+        The RF model is a Random Forest Regressor model.
         The RF parameter grid contains the parameters that will be used to tune the RF model.
 
     Returns:
