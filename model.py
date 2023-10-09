@@ -50,7 +50,7 @@ def svr_params():
     """
     Description:
         The SVR model is a support vector regression model
-        The SVR parameter grid contains the parameters that will be used to tune the SVR model
+        The SVR parameter grid contains the parameters that will be used to tune the SVR model.
 
     Returns:
         The SVR model and the SVR parameter grid
