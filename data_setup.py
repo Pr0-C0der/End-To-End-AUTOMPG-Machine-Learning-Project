@@ -22,7 +22,7 @@ def download_data(url=DATA_URL):
         If the file already exists, it is overwritten.
 
     Args:
-        url: The URL of the data to be downloaded.
+        url: The URL of the data to be downloaded
     """
 
     try:
